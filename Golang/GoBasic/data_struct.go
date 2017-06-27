@@ -13,6 +13,12 @@ func (p person) speak(){
 	fmt.Println(p.fname)
 	fmt.Println(p.lname)
 }
+type human interface {
+	speak()
+}
+func saySomething(h human){
+	h.speak()
+}
 func main() {
 	xi := [] int {2,4,57}
 	m := map[string]int{
@@ -36,4 +42,5 @@ func main() {
 		true,
 	}
 	fmt.Println(sec)
+	saySomething(per)
 }
