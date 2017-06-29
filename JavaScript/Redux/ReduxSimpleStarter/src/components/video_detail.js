@@ -1,14 +1,19 @@
 import React from 'react'
 
 const VideoDetail = ({video})=>{
-
+	console.log(video)
 	if (!video){
 		return (
 				<div> Loading ... </div>
 			)
 	}
+	// console.log("-----------------------")
+	// console.log(video)
+	// console.log("-----------------------")
 	const video_id = video.id.videoId;
-	const url = `https://www.youtube.com/embed/${video_id}`
+	const url = `https://www.youtube.com//embed/${video_id}`
+	
+
 	return (
 		<div className="video-detail col-md-8">
 			<div className="embed-reponsive embed-reponsive-16by9">
