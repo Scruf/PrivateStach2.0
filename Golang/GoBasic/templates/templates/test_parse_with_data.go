@@ -14,7 +14,7 @@ func init(){
 
 
 func main(){
-	err := tpl.ExecuteTemplate(os.Stdout, "tpl_2.gohtml", 42)
+	err := tpl.ExecuteTemplate(os.Stdout, "tpl_2.gohtml", `Some random String `)
 	if err != nil {
 		log.Fatalln(err)
 	}
