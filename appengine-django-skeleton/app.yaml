@@ -16,7 +16,12 @@
 # See https://cloud.google.com/appengine/docs/managed-vms/config for details.
 
 # [START django_app]
-runtime: python27
+runtime: python
+env: flex
+
+runtime_config:
+    python_version: 3
+
 api_version: 1
 threadsafe: yes
 
@@ -29,7 +34,5 @@ handlers:
 # Only pure Python libraries can be vendored
 # Python libraries that use C extensions can
 # only be included if they are part of the App Engine SDK 
-libraries:
-- name: MySQLdb
-  version: 1.2.5
+
 # [END django_app]
