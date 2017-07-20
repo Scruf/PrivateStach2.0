@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Updating</title>
+</head>
+<body>
+	
+<h1>Edit article</h1>
+ 
+<%= form_for (@article) do |f| %>
+ 
+  
+ 
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :Text %><br>
+    <%= f.text_area :Text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>
+</body>
+</html>
